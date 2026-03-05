@@ -1,0 +1,32 @@
+{
+  "name": "roam-graph-rag",
+  "version": "0.1.0",
+  "description": "Graph-RAG system for Roam Research, powered by Datomic-native graph extraction and community detection",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "better-sqlite3": "^11.7.0",
+    "graphology": "^0.25.4",
+    "graphology-communities-louvain": "^2.0.1",
+    "graphology-types": "^0.24.7",
+    "openai": "^4.77.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
